@@ -20,4 +20,4 @@ jobs:
     - run: pip3 install fastapi; pip3 install uvicorn
     - run: cd MyLibrary/Tests/MyLibraryTests; uvicorn mock_api:app --reload --port 8000 &
     - name: Run tests
-      run: swift test -v
+      run: cd MyLibrary; swift test -v
